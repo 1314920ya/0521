@@ -7,6 +7,7 @@
 </head>
 <body>
     <h2>我喜歡的飲料</h2>
+    <h3>直向排列</h3>
     <script>
         let drinks=['卡布奇諾咖啡','拿鐵咖啡','珍珠奶茶','長島冰茶','愛爾蘭咖啡','藍色夏威夷','英式水果冰茶'];
 
@@ -15,6 +16,25 @@
                 document.write('<tr><td>飲料' + (i+1) + '</td>');
                 document.write('<td>' + drinks[i] + '</td></tr>');
             }
+            document.write('</table>');
+    </script>
+    <h3>橫向排列</h3>
+    <script>
+        let drinks2=['卡布奇諾咖啡','拿鐵咖啡','珍珠奶茶','長島冰茶','愛爾蘭咖啡','藍色夏威夷','英式水果冰茶'];
+
+        document.write('<table border="1">');
+           
+        document.write('<tr>');
+        for(let i=0;i<drinks2.length;i++){
+            document.write('<td>飲料'+(i+1)+'</td>');
+        }
+        document.write('</tr>');
+            
+        document.write('<tr>');
+            for(let i=0;i<drinks2.length;i++){
+            document.write('<td>'+drinks2[i]+'</>');
+            }
+            document.write('</tr>');
             document.write('</table>');
     </script>
 </body>
